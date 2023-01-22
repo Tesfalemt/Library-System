@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="i created adapter,@Document...etc">
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Repository/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Repository/CustomerRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2KesCgpwN3btrBNdmEglsxzreGd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;37f1dcc653398f6db72d023fd3016592&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.project.CustomerService.adapter" />
+      <recent name="com.project.CustomerService.Domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BooksQueryServiceApplication">
+    <configuration name="BooksCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BooksCommandService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksCommandService.BooksCommandServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BooksQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BooksQueryService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksQueryService.BooksQueryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowingsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BorrowingsService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BorrowingsService.BorrowingsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CustomerService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.CustomerService.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ReviewService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.ReviewService.ReviewServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="" />
+      <created>1674346256803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674346256803</updated>
+      <workItem from="1674346258885" duration="60000" />
+      <workItem from="1674346333823" duration="150000" />
+      <workItem from="1674346521701" duration="1000" />
+      <workItem from="1674346568307" duration="2491000" />
+      <workItem from="1674352437903" duration="9143000" />
+    </task>
+    <task id="LOCAL-00001" summary="customer is created">
+      <created>1674346927929</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674346927929</updated>
+    </task>
+    <task id="LOCAL-00002" summary="customer is updated">
+      <created>1674348327871</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674348327871</updated>
+    </task>
+    <task id="LOCAL-00003" summary="i created adapter,@Document...etc">
+      <created>1674358990830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674358990830</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="customer is created" />
+    <MESSAGE value="customer is updated" />
+    <MESSAGE value="i created adapter,@Document...etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="i created adapter,@Document...etc" />
+  </component>
+</project>
