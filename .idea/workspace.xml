@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="i created adapter,@Document...etc">
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Repository/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Repository/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" afterDir="false" />
-    </list>
+    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="i created adapter,@Document...etc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +36,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2KesCgpwN3btrBNdmEglsxzreGd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -116,7 +110,7 @@
       <workItem from="1674346333823" duration="150000" />
       <workItem from="1674346521701" duration="1000" />
       <workItem from="1674346568307" duration="2491000" />
-      <workItem from="1674352437903" duration="9143000" />
+      <workItem from="1674352437903" duration="10190000" />
     </task>
     <task id="LOCAL-00001" summary="customer is created">
       <created>1674346927929</created>
@@ -139,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674358990830</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="i created adapter,@Document...etc">
+      <created>1674403001272</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674403001272</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
