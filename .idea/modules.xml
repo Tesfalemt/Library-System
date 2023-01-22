@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BooksCommandService/BooksCommandService.iml" filepath="$PROJECT_DIR$/BooksCommandService/BooksCommandService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Library-System.iml" filepath="$PROJECT_DIR$/.idea/Library-System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BooksQueryService/BooksQueryService.iml" filepath="$PROJECT_DIR$/BooksQueryService/BooksQueryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BorrowingsService/BorrowingsService.iml" filepath="$PROJECT_DIR$/BorrowingsService/BorrowingsService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomerService/CustomerService.iml" filepath="$PROJECT_DIR$/CustomerService/CustomerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReviewService/ReviewService.iml" filepath="$PROJECT_DIR$/ReviewService/ReviewService.iml" />
     </modules>
   </component>
 </project>
