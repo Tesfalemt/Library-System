@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="i created adapter,@Document...etc" />
+    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Repository/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Repository/CustomerRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +68,20 @@
       <recent name="com.project.CustomerService.Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BooksQueryServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerServiceApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ReviewService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ReviewService" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BooksCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BooksCommandService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.BooksCommandService.BooksCommandServiceApplication" />

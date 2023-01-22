@@ -19,7 +19,7 @@ public class CustomerController {
         return  new ResponseEntity<>(customerDto, HttpStatus.OK);
     }
     @DeleteMapping("/{customerNumber}")
-    public ResponseEntity<?> deleteCustomer(@PathVariable long customerNumber){
+    public ResponseEntity<?> deleteCustomer(@PathVariable String customerNumber){
         customerService.deleteById(customerNumber);
         return  new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }

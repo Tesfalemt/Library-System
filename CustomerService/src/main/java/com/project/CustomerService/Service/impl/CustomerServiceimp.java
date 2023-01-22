@@ -19,7 +19,7 @@ public class CustomerServiceimp implements CustomerService {
     }
 
     @Override
-    public void deleteById(long customerNumber) {
+    public void deleteById(String customerNumber) {
         var customer=customerRepo.findById(customerNumber).orElseThrow();
         if (customer!=null){
             customerRepo.deleteById(customerNumber);
