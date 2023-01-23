@@ -1,5 +1,6 @@
 package com.project.CustomerService.Controller;
 
+import com.project.CustomerService.Domain.Customer;
 import com.project.CustomerService.Service.CustomerService;
 import com.project.CustomerService.adapter.CustomerDto;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,12 @@ public class CustomerController {
         return  new ResponseEntity<>(customerDto, HttpStatus.OK);
     }
     @DeleteMapping("/{customerNumber}")
-    public ResponseEntity<?> deleteCustomer(@PathVariable String customerNumber){
+    public ResponseEntity<?> deleteCustomer(@PathVariable long customerNumber){
         customerService.deleteById(customerNumber);
         return  new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+    @GetMapping("{id}")
+    public Customer getCustomer(@PathVariable long id ){
+        return customerService.getCustomerById(id);
     }
 }

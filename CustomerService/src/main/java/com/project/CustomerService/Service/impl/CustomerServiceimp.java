@@ -8,6 +8,8 @@ import com.project.CustomerService.adapter.CustomerDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class CustomerServiceimp implements CustomerService {
 @Autowired
@@ -19,12 +21,18 @@ public class CustomerServiceimp implements CustomerService {
     }
 
     @Override
-    public void deleteById(String customerNumber) {
+    public void deleteById(Long customerNumber) {
         var customer=customerRepo.findById(customerNumber).orElseThrow();
         if (customer!=null){
             customerRepo.deleteById(customerNumber);
         }
         else System.out.println("customer is not found");
 
+    }
+
+    @Override
+    public Customer getCustomerById(long id) {
+        Customer customer = customerRepo.findById(id).get();
+        return customer;
     }
 }
