@@ -1,15 +1,16 @@
-package com.project.BooksCommandService.Service;
+package com.project.BooksCommandService.Service.Impl;
 
 import com.project.BooksCommandService.Repository.BookCommandRepo;
 import com.project.BooksCommandService.Domain.Book;
-import com.project.BooksCommandService.Service.Dto.BookAdapter;
+import com.project.BooksCommandService.Service.IBookCommandService;
+import com.project.BooksCommandService.Service.adapter.BookAdapter;
 import com.project.BooksCommandService.Service.Dto.BookDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class BookCommandServiceImp implements IBookCommandService{
+public class BookCommandServiceImp implements IBookCommandService {
 
     @Autowired
     private BookCommandRepo bookCommandRepo;

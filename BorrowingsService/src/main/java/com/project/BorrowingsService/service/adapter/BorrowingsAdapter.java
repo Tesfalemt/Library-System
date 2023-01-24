@@ -1,6 +1,8 @@
-package com.project.BorrowingsService.service.Dto;
+package com.project.BorrowingsService.service.adapter;
 
 import com.project.BorrowingsService.Domain.Borrowing;
+import com.project.BorrowingsService.service.Dto.BorrowingDto;
+import com.project.BorrowingsService.service.Dto.BorrowingsDto;
 
 import java.util.ArrayList;
 import java.util.List;

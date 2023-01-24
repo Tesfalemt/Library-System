@@ -1,6 +1,7 @@
-package com.project.BooksCommandService.Service.Dto;
+package com.project.BooksCommandService.Service.adapter;
 
 import com.project.BooksCommandService.Domain.Book;
+import com.project.BooksCommandService.Service.Dto.BookDto;
 
 public class BookAdapter {
     public static Book getBookFromBookDto(BookDto bookDto){

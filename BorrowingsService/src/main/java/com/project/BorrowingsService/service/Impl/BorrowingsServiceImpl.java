@@ -1,10 +1,11 @@
-package com.project.BorrowingsService.service;
+package com.project.BorrowingsService.service.Impl;
 
 
 import com.project.BorrowingsService.Domain.Borrowing;
 import com.project.BorrowingsService.Repository.BorrowingDAO;
+import com.project.BorrowingsService.service.BorrowingsService;
 import com.project.BorrowingsService.service.Dto.BorrowingDto;
-import com.project.BorrowingsService.service.Dto.BorrowingsAdapter;
+import com.project.BorrowingsService.service.adapter.BorrowingsAdapter;
 
 import com.project.BorrowingsService.service.Dto.BorrowingsDto;
 import com.project.BorrowingsService.service.Dto.CustomMessage;
@@ -16,7 +17,7 @@ import java.util.Optional;
 
 
 @Service
-public class BorrowingsServiceImpl implements BorrowingsService{
+public class BorrowingsServiceImpl implements BorrowingsService {
 
     @Autowired
    private  BorrowingDAO borrowingDAO;
