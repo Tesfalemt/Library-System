@@ -2,6 +2,7 @@ package com.project.BooksCommandService.Service;
 
 
 import com.project.BooksCommandService.Domain.Book;
+import com.project.BooksCommandService.Integration.KafkaSender;
 import com.project.BooksCommandService.Repository.BookCommandRepo;
 import com.project.BooksCommandService.Service.Dto.BookDto;
 import com.project.BooksCommandService.Service.Impl.BookCommandServiceImp;
@@ -28,6 +29,9 @@ public class BookCommandServiceImpImpTest {
     @MockBean
     private BookCommandRepo bookCommandRepo;
 
+    @MockBean
+    private KafkaSender kafkaSender;
+
 
 
     /**
@@ -41,12 +45,12 @@ public class BookCommandServiceImpImpTest {
         book.setIsbn(1L);
         book.setTitle("Dr");
         when(bookCommandRepo.save((Book) any())).thenReturn(book);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         BookDto bookDto = new BookDto(1L, "Dr", "The characteristics of someone or something", "JaneDoe");
 
         assertSame(bookDto, bookCommandServiceImp.addBook(bookDto));
         verify(bookCommandRepo).save((Book) any());
-//        verify(kafkaSender).send((String) any(), (BookDto) any());
+        verify(kafkaSender).send((String) any(), (BookDto) any());
     }
 
     /**
@@ -70,7 +74,7 @@ public class BookCommandServiceImpImpTest {
         book.setIsbn(1L);
         book.setTitle("Dr");
         when(bookCommandRepo.save((Book) any())).thenReturn(book);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         bookCommandServiceImp.addBook(null);
     }
 
@@ -85,7 +89,7 @@ public class BookCommandServiceImpImpTest {
         book.setIsbn(1L);
         book.setTitle("Dr");
         when(bookCommandRepo.save((Book) any())).thenReturn(book);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         BookDto bookDto = mock(BookDto.class);
         when(bookDto.getAuthor()).thenReturn("JaneDoe");
         when(bookDto.getDescription()).thenReturn("The characteristics of someone or something");
@@ -93,7 +97,7 @@ public class BookCommandServiceImpImpTest {
         when(bookDto.getIsbn()).thenReturn(1L);
         bookCommandServiceImp.addBook(bookDto);
         verify(bookCommandRepo).save((Book) any());
-//        verify(kafkaSender).send((String) any(), (BookDto) any());
+        verify(kafkaSender).send((String) any(), (BookDto) any());
         verify(bookDto).getAuthor();
         verify(bookDto).getDescription();
         verify(bookDto).getTitle();
@@ -119,7 +123,7 @@ public class BookCommandServiceImpImpTest {
         book1.setTitle("Dr");
         when(bookCommandRepo.save((Book) any())).thenReturn(book1);
         when(bookCommandRepo.findById((Long) any())).thenReturn(ofResult);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         BookDto bookDto = new BookDto(1L, "Dr", "The characteristics of someone or something", "JaneDoe");
 
         assertSame(bookDto, bookCommandServiceImp.updateBook(1L, bookDto));
@@ -140,7 +144,7 @@ public class BookCommandServiceImpImpTest {
         book.setTitle("Dr");
         when(bookCommandRepo.save((Book) any())).thenReturn(book);
         when(bookCommandRepo.findById((Long) any())).thenReturn(Optional.empty());
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         BookDto bookDto = new BookDto(1L, "Dr", "The characteristics of someone or something", "JaneDoe");
 
         assertSame(bookDto, bookCommandServiceImp.updateBook(1L, bookDto));
@@ -176,7 +180,7 @@ public class BookCommandServiceImpImpTest {
         book1.setTitle("Dr");
         when(bookCommandRepo.save((Book) any())).thenReturn(book1);
         when(bookCommandRepo.findById((Long) any())).thenReturn(ofResult);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         bookCommandServiceImp.updateBook(1L, null);
     }
 
@@ -199,7 +203,7 @@ public class BookCommandServiceImpImpTest {
         book1.setTitle("Dr");
         when(bookCommandRepo.save((Book) any())).thenReturn(book1);
         when(bookCommandRepo.findById((Long) any())).thenReturn(ofResult);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         BookDto bookDto = mock(BookDto.class);
         when(bookDto.getAuthor()).thenReturn("JaneDoe");
         when(bookDto.getDescription()).thenReturn("The characteristics of someone or something");
@@ -208,7 +212,7 @@ public class BookCommandServiceImpImpTest {
         bookCommandServiceImp.updateBook(1L, bookDto);
         verify(bookCommandRepo).save((Book) any());
         verify(bookCommandRepo).findById((Long) any());
-//        verify(kafkaSender).send((String) any(), (BookDto) any());
+        verify(kafkaSender).send((String) any(), (BookDto) any());
         verify(bookDto).getAuthor();
         verify(bookDto).getDescription();
         verify(bookDto).getTitle();
@@ -228,7 +232,7 @@ public class BookCommandServiceImpImpTest {
         Optional<Book> ofResult = Optional.of(book);
         doNothing().when(bookCommandRepo).deleteById((Long) any());
         when(bookCommandRepo.findById((Long) any())).thenReturn(ofResult);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         BookDto actualDeleteBookResult = bookCommandServiceImp.deleteBook(1L);
         assertEquals("JaneDoe", actualDeleteBookResult.getAuthor());
         assertEquals("Dr", actualDeleteBookResult.getTitle());
@@ -236,7 +240,7 @@ public class BookCommandServiceImpImpTest {
         assertEquals("The characteristics of someone or something", actualDeleteBookResult.getDescription());
         verify(bookCommandRepo).findById((Long) any());
         verify(bookCommandRepo).deleteById((Long) any());
-//        verify(kafkaSender).send((String) any(), (BookDto) any());
+        verify(kafkaSender).send((String) any(), (BookDto) any());
     }
 
     /**
@@ -260,7 +264,7 @@ public class BookCommandServiceImpImpTest {
         Optional<Book> ofResult = Optional.of(book);
         doNothing().when(bookCommandRepo).deleteById((Long) any());
         when(bookCommandRepo.findById((Long) any())).thenReturn(ofResult);
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         BookDto actualDeleteBookResult = bookCommandServiceImp.deleteBook(1L);
         assertEquals("JaneDoe", actualDeleteBookResult.getAuthor());
         assertEquals("Dr", actualDeleteBookResult.getTitle());
@@ -276,7 +280,7 @@ public class BookCommandServiceImpImpTest {
         verify(book).setDescription((String) any());
         verify(book).setIsbn(anyLong());
         verify(book).setTitle((String) any());
-//        verify(kafkaSender).send((String) any(), (BookDto) any());
+        verify(kafkaSender).send((String) any(), (BookDto) any());
     }
 
     /**
@@ -309,7 +313,7 @@ public class BookCommandServiceImpImpTest {
         book.setDescription("The characteristics of someone or something");
         book.setIsbn(1L);
         book.setTitle("Dr");
-//        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
+        doNothing().when(kafkaSender).send((String) any(), (BookDto) any());
         bookCommandServiceImp.deleteBook(1L);
     }
 }
