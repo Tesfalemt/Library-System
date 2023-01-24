@@ -13,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BooksCommandService" target="17" />
-      <module name="BorrowingsService" target="11" />
+      <module name="BorrowingsService" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
