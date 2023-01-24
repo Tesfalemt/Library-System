@@ -25,8 +25,6 @@ public class BookCommandController {
         return new ResponseEntity<>( bookDto, HttpStatus.OK);
     }
 
-
-
     @DeleteMapping("/delete/{isbn}")
     public ResponseEntity<?> deleteBook(@PathVariable long isbn){
        BookDto bookDto = iBookCommandService.deleteBook(isbn);

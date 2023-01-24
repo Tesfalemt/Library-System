@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BooksCommandService" target="19" />
+      <module name="BooksCommandService" target="17" />
       <module name="BorrowingsService" target="11" />
     </bytecodeTargetLevel>
   </component>
