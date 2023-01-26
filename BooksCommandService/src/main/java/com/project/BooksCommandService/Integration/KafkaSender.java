@@ -19,7 +19,7 @@ public class KafkaSender {
             bookDtoString = objectMapper.writeValueAsString(bookDTO);
             kafkaTemplate.send(topic, bookDtoString);
         }catch (Exception e){
-            throw new RuntimeException(e);
+            throw new RuntimeException("exception occured during sending with kafka object as a string");
         }
 
     }

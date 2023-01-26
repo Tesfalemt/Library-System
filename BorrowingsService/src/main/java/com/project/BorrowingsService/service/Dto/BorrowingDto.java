@@ -13,8 +13,10 @@ public class BorrowingDto {
 
     private long borrowingNumber;
     private String date;
-    private long customerNumber;
-    private String customerName;
-    private long isbn;
-    private String bookTitle;
+//    private long customerNumber;
+//    private String customerName;
+//    private long isbn;
+//    private String bookTitle;
+    private CustomerDto customerDto;
+    private BookDto bookDto;
 }

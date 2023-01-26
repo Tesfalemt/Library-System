@@ -1,6 +1,7 @@
 package com.project.BorrowingsService.Controller;
 
 import com.project.BorrowingsService.Domain.Borrowing;
+import com.project.BorrowingsService.Repository.BorrowingDAO;
 import com.project.BorrowingsService.service.BorrowingsService;
 import com.project.BorrowingsService.service.Dto.BorrowingDto;
 import com.project.BorrowingsService.service.Dto.BorrowingsDto;
@@ -18,6 +19,8 @@ public class BorrowingsController {
 
     @Autowired
     BorrowingsService borrowingsService;
+    @Autowired
+    private BorrowingDAO borrowingDAO;
 
     //natu
     @GetMapping("/{borrowingNumber}")
@@ -34,9 +37,9 @@ public class BorrowingsController {
 
     //weini
     @PostMapping("/{customerNumber}/{isbn}")
-    public ResponseEntity<BorrowingDto> addBorrowing( @PathVariable long customerNumber,@PathVariable long isbn){
-        BorrowingDto borrowingDto = borrowingsService.addBorrowing(customerNumber,isbn);
-        return new ResponseEntity<>(borrowingDto, HttpStatus.OK);
+    public ResponseEntity<BorrowingDto> addBorrowing( @PathVariable long customerNumber,@PathVariable long isbn,@RequestBody BorrowingDto borrowingDto){
+        BorrowingDto borrowingDto1 = borrowingsService.addBorrowing(customerNumber,isbn, borrowingDto);
+        return new ResponseEntity<>(borrowingDto1, HttpStatus.OK);
     }
     //miki
     @PutMapping("/borrowingNumber")

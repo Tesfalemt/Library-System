@@ -30,14 +30,14 @@ public class BookListener {
             bookDto = objectMapper.readValue(bookDtoString , BookDto.class);
             List<Borrowing> borrowings = borrowingDAO.findBorrowingsByIsbn(bookDto.getIsbn());
         for (Borrowing borrowing : borrowings) {
-            if (borrowing.getIsbn() == bookDto.getIsbn()){
-                borrowing.setIsbn(bookDto.getIsbn());
-                borrowing.setBookTitle(bookDto.getTitle());
+            if (borrowing.getBook().getIsbn() == bookDto.getIsbn()){
+                borrowing.setBook(bookDto);
+                borrowingDAO.save(borrowing);
                 borrowingDAO.save(borrowing);
             }
            }
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("exception caught during subscribing kafka object");
         }
 
     }

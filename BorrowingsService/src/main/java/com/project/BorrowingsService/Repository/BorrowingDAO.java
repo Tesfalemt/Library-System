@@ -11,8 +11,8 @@ import java.util.List;
 @Repository
 public interface BorrowingDAO extends MongoRepository<Borrowing, Long> {
 
-//    @Query("{'customer.customerNumber'::#{#customerNumber}}")
-//    List<Borrowing> findCBorrowingsByCustomerNumber(@Param("customerNumber") long customerNumber);
+    @Query("{'customer.customerNumber'::#{#customerNumber}}")
+    List<Borrowing> findBorrowingsByCustomerNumber(@Param("customerNumber") long customerNumber);
 //
     @Query("{'book.isbn'::#{#isbn}}")
     List<Borrowing> findBorrowingsByIsbn(@Param("isbn") long isbn);
