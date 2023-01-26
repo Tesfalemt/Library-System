@@ -33,9 +33,9 @@ public class BorrowingsController {
 }
 
     //weini
-    @PostMapping
-    public ResponseEntity<BorrowingDto> addBorrowing(@RequestBody BorrowingDto borrowingDTO){
-        BorrowingDto borrowingDto = borrowingsService.addBorrowing(borrowingDTO);
+    @PostMapping("/{customerNumber}/{isbn}")
+    public ResponseEntity<BorrowingDto> addBorrowing( @PathVariable long customerNumber,@PathVariable long isbn){
+        BorrowingDto borrowingDto = borrowingsService.addBorrowing(customerNumber,isbn);
         return new ResponseEntity<>(borrowingDto, HttpStatus.OK);
     }
     //miki

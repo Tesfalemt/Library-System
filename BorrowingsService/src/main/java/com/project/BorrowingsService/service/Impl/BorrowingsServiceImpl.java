@@ -40,7 +40,8 @@ public class BorrowingsServiceImpl implements BorrowingsService {
     }
 
     @Override
-    public BorrowingDto addBorrowing(BorrowingDto borrowingDto) {
+    public BorrowingDto addBorrowing( long customerNumber, long isbn) {
+       BorrowingDto borrowingDto =
         Borrowing borrowing = BorrowingsAdapter.getBorrowingFromBorrowingDTO(borrowingDto);
         borrowingDAO.save(borrowing);
         return borrowingDto;

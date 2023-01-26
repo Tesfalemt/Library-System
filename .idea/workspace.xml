@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated" />
+    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated-borrowing test &amp; kafkaSender and receiver created">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rocksdb_rocksdbjni_6_29_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/FeignInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Integration/KafkaSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Integration/KafkaSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/BorrowingsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/BorrowingsServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Controller/BorrowingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Controller/BorrowingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/BookListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/BookListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Impl/BorrowingsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Impl/BorrowingsServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +41,7 @@
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Miki" />
+        <entry key="$PROJECT_DIR$" value="abiel" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,20 +50,7 @@
     <setting file="file://$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,10 +75,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "5d597778d37d12fbeaf0b3e5a569c933"
   }
@@ -187,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookCommandControllerTest.testDeleteBook" />
         <item itemvalue="JUnit.BookCommandControllerTest.testUpdateBook" />
+        <item itemvalue="JUnit.BookCommandControllerTest.testDeleteBook" />
         <item itemvalue="JUnit.BookCommandControllerTest.testAddBook" />
         <item itemvalue="Diffblue Cover.Write tests for package " />
-        <item itemvalue="Diffblue Cover.Write tests for package " />
+        <item itemvalue="JUnit.BookCommandControllerTest.testDeleteBook" />
       </list>
     </recent_temporary>
   </component>
@@ -216,16 +223,8 @@
       <workItem from="1674525518427" duration="665000" />
       <workItem from="1674527154832" duration="748000" />
       <workItem from="1674583956565" duration="1045000" />
-      <workItem from="1674593792373" duration="2022000" />
+      <workItem from="1674593792373" duration="1065000" />
     </task>
-    <task id="LOCAL-00001" summary="updated">
-      <created>1674600531168</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1674600531168</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,9 +240,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
 </project>

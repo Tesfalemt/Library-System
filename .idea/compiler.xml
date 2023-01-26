@@ -9,17 +9,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="BorrowingsService" />
         <module name="BooksCommandService" />
+        <module name="CustomerService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BooksCommandService" target="17" />
       <module name="BorrowingsService" target="11" />
+      <module name="CustomerService" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BooksCommandService" options="-parameters" />
       <module name="BorrowingsService" options="-parameters" />
+      <module name="CustomerService" options="-parameters" />
     </option>
   </component>
 </project>

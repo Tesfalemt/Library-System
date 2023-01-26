@@ -15,7 +15,7 @@ public interface BorrowingsService {
 
     public BorrowingsDto getBorrowings(); // Luwam
 
-    public BorrowingDto addBorrowing(BorrowingDto borrowingDTO);  //Weini
+    public BorrowingDto addBorrowing(long isbn, long customerNumber);  //Weini
 
     public BorrowingDto updateBorrowing(long borrowingNumber, BorrowingDto borrowingDto); // Miki
 

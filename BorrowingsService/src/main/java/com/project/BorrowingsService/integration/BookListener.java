@@ -2,6 +2,7 @@ package com.project.BorrowingsService.integration;
 
 
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.project.BorrowingsService.Domain.Borrowing;
 import com.project.BorrowingsService.Repository.BorrowingDAO;
 import com.project.BorrowingsService.service.BorrowingsService;
@@ -22,13 +23,22 @@ public class BookListener {
     BorrowingsService borrowingsService;
 
     @KafkaListener(topics = {"update-book-topic"}, groupId = "gid")
-    public void receive(@Payload BookDto bookDto) {
-        System.out.println("received message=" + bookDto.toString());
-        List<Borrowing> borrowings = borrowingDAO.findBorrowingsByIsbn(bookDto.getIsbn());
+    public void receive(@Payload String bookDtoString) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        BookDto bookDto;
+        try {
+            bookDto = objectMapper.readValue(bookDtoString , BookDto.class);
+            List<Borrowing> borrowings = borrowingDAO.findBorrowingsByIsbn(bookDto.getIsbn());
         for (Borrowing borrowing : borrowings) {
-            borrowing.setIsbn(bookDto.getIsbn());
-            borrowing.setBookTitle(bookDto.getTitle());
-            borrowingDAO.save(borrowing);
+            if (borrowing.getIsbn() == bookDto.getIsbn()){
+                borrowing.setIsbn(bookDto.getIsbn());
+                borrowing.setBookTitle(bookDto.getTitle());
+                borrowingDAO.save(borrowing);
+            }
+           }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
+
     }
 }
