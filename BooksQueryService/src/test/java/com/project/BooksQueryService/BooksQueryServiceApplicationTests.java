@@ -8,6 +8,8 @@ class BooksQueryServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
+
+
 	}
 
 }
