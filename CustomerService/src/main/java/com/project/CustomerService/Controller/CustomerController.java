@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/customers")
 public class CustomerController {
@@ -28,4 +30,16 @@ public class CustomerController {
     public Customer getCustomer(@PathVariable long id ){
         return customerService.getCustomerById(id);
     }
+
+
+    @GetMapping()
+    public ResponseEntity<List<CustomerDto>> getCustomer(){
+        return ResponseEntity.ok().body(customerService.getCustomers());
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<CustomerDto> updateCustomer(@PathVariable("id") Long customerId, CustomerDto customerDto){
+        return ResponseEntity.ok().body(customerService.updateCustomer(customerId,customerDto));
+    }
+
 }

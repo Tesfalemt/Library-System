@@ -4,36 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="Rahel created getById method." />
-    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="connecting to mySql database">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_5_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_3_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_6_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/java/com/project/BooksQueryService/BookQueryIntegration/ReviewReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksQueryService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/ReviewIntegration/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReviewService/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="Rahel created getById method.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_aws_brave_propagation_aws_0_21_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_context_slf4j_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_http_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpasyncclient_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpclient_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_jms_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_clients_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_streams_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_messaging_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_mongodb_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_rpc_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_rabbit_5_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_2_16_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_brave_2_16_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_metrics_micrometer_2_16_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_activemq_client_2_16_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_amqp_client_2_16_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_kafka_2_16_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_23_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_69.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_69.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcutil_jdk15on_1_69.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_api_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_autoconfigure_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_brave_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_instrumentation_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_zipkin_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/CustomerIntegration/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/AddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/ContactDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2023_11_21_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2023_11_21_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksQueryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksQueryService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksQueryService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksQueryService/src/test/java/com/project/BooksQueryService/BooksQueryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksQueryService/src/test/java/com/project/BooksQueryService/BooksQueryServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/test/java/com/project/CustomerService/CustomerServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/test/java/com/project/CustomerService/CustomerServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksQueryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksQueryService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Service/impl/CustomerServiceimp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/adapter/CustomerDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReviewService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/Dto/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/Dto/ReviewDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/service/serviceImplim/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/com/project/ReviewService/service/serviceImplim/ReviewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/test/java/com/project/ReviewService/ReviewServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/test/java/com/project/ReviewService/ReviewServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +69,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -75,7 +101,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -106,13 +132,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "37f1dcc653398f6db72d023fd3016592"
+    "spring.configuration.checksum": "1b9ad30ca2e4727c8dfa409dd5e840bd"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -120,8 +148,19 @@
       <recent name="com.project.CustomerService.adapter" />
       <recent name="com.project.CustomerService.Domain" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.project.ReviewService.ReviewIntegration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.project.CustomerService.Service" />
+      <recent name="com.project.CustomerService.adapter" />
+      <recent name="com.project.CustomerService.CustomerIntegration" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ReviewServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ReviewService" />
       <method v="2">
@@ -184,6 +223,8 @@
       <workItem from="1674346521701" duration="1000" />
       <workItem from="1674346568307" duration="2491000" />
       <workItem from="1674352437903" duration="10190000" />
+      <workItem from="1674713637605" duration="6716000" />
+      <workItem from="1674754763687" duration="7803000" />
     </task>
     <task id="LOCAL-00001" summary="customer is created">
       <created>1674346927929</created>
