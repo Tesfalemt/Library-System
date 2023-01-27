@@ -1,9 +1,6 @@
 package com.project.CustomerService.Domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Getter
@@ -11,14 +8,15 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+
 public class Customer {
     @Id
     private Long customerNumber;
     private String name;
 
-    @OneToOne
+    @Embedded
     private Address address;
 
-    @OneToOne
+    @Embedded
     private Contact contact;
 }

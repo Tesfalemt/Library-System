@@ -19,10 +19,10 @@ public class CustomerController {
     @PostMapping
     public ResponseEntity<?> addCustomer(@RequestBody CustomerDto customerDto){
         customerService.createCustomer(customerDto);
-        return  new ResponseEntity<>(customerDto, HttpStatus.OK);
+        return  new ResponseEntity<>(customerDto, HttpStatus.CREATED);
     }
     @DeleteMapping("/{customerNumber}")
-    public ResponseEntity<?> deleteCustomer(@PathVariable long customerNumber){
+    public ResponseEntity<?> deleteCustomer(@PathVariable("customerNumber") long customerNumber){
         customerService.deleteById(customerNumber);
         return  new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
@@ -38,7 +38,7 @@ public class CustomerController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<CustomerDto> updateCustomer(@PathVariable("id") Long customerId, CustomerDto customerDto){
+    public ResponseEntity<CustomerDto> updateCustomer(@PathVariable("id") Long customerId, @RequestBody CustomerDto customerDto){
         return ResponseEntity.ok().body(customerService.updateCustomer(customerId,customerDto));
     }
 
