@@ -22,6 +22,6 @@ public class Sender {
             throw new RuntimeException(e);
         }
 
-        kafkaTemplate.send("customerTopic", customerEventToString);
+        kafkaTemplate.send("customertopic", customerEventToString);
     }
 }

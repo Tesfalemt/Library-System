@@ -49,40 +49,6 @@ class CustomerServiceApplicationTests {
 
 
 	}
-//   @Test
-//   public void getAll() {
-//	   CustomerDto customerDto = new CustomerDto(1, "Akiki", new AddressDto("Asmara", "harnet", "111"), new ContactDto("1234", "abc@gmail.com"));
-//	   CustomerDto customerDto2 = new CustomerDto(2, "Aman", new AddressDto("keren", "bela", "222"), new ContactDto("2342", "aman@gmail.com"));
-//	   List<CustomerDto> customerDtos = new ArrayList<>();
-//	   customerDtos.add(customerDto2);
-//	   customerDtos.add(customerDto);
-//	   restTemplate.postForObject(baseUrl, customerDto, Customer.class);
-//	   restTemplate.postForObject(baseUrl, customerDto2, Customer.class);
-//
-//	   CustomerList responseCustomer = restTemplate.getForObject(baseUrl, CustomerList.class);
-//	   List<CustomerDto> getCustomers = responseCustomer.getCustomerLists();
-//	   Assertions.assertEquals(customerDtos, getCustomers);
-//	   restTemplate.delete(baseUrl + "/1");
-//	   restTemplate.delete(baseUrl + "/2");
-//   }
-
-
-//	@Test
-//   public void getAll() {
-//	   CustomerDto customerDto = new CustomerDto(1, "Akiki", new AddressDto("Asmara", "harnet", "111"), new ContactDto("1234", "abc@gmail.com"));
-//	   CustomerDto customerDto2 = new CustomerDto(2, "Aman", new AddressDto("keren", "bela", "222"), new ContactDto("2342", "aman@gmail.com"));
-//	   List<CustomerDto> customerDtos = new ArrayList<>();
-//	   customerDtos.add(customerDto2);
-//	   customerDtos.add(customerDto);
-//	   restTemplate.postForObject(baseUrl, customerDto, Customer.class);
-//	   restTemplate.postForObject(baseUrl, customerDto2, Customer.class);
-//
-//	   CustomerList responseCustomer = restTemplate.getForObject(baseUrl, CustomerList.class);
-//	   List<CustomerDto> getCustomers = responseCustomer.getCustomerLists();
-//	   Assertions.assertEquals(customerDtos, getCustomers);
-//	   restTemplate.delete(baseUrl + "/1");
-//	   restTemplate.delete(baseUrl + "/2");
-//   }
 
 	@Test
    public void updateCustomer() {

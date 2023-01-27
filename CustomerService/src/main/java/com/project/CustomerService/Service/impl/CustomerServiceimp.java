@@ -37,7 +37,7 @@ public class CustomerServiceimp implements CustomerService {
         else System.out.println("customer is not found");
 
 
-        //sender.send(new CustomerEvent(CustomerAdaptor.getCustomerDtoFromCustomer(customer),"Delete"));
+        sender.send(new CustomerEvent(CustomerAdaptor.getCustomerDtoFromCustomer(customer),"Delete"));
     }
 
     @Override
@@ -69,7 +69,7 @@ public class CustomerServiceimp implements CustomerService {
             //save the updated customer to the DB
             customerRepo.save(customer);
             //send the message to the borrowing after updating
-          //  sender.send(new CustomerEvent(CustomerAdaptor.getCustomerDtoFromCustomer(customer), "Update"));
+           sender.send(new CustomerEvent(CustomerAdaptor.getCustomerDtoFromCustomer(customer), "Update"));
 
         }else throw new NullPointerException("Customer didn't find in the DB");
         return CustomerAdaptor.getCustomerDtoFromCustomer(customer);
