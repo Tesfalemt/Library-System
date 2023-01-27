@@ -11,6 +11,7 @@ import lombok.*;
 
 public class Customer {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long customerNumber;
     private String name;
 
