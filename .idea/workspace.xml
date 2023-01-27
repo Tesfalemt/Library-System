@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated-borrowing test &amp; kafkaSender and receiver created">
-      <change afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/BookQueryFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/CustomerFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto/ContactDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_unknown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Integration/KafkaSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/Integration/KafkaSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Controller/BorrowingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Controller/BorrowingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Domain/Borrowing.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Domain/Borrowing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Repository/BorrowingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/Repository/BorrowingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/BookListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/BookListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/CustomerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/CustomerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration/FeignInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/BorrowingsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto/BookDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto/BorrowingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto/BorrowingDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Impl/BorrowingsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Impl/BorrowingsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/adapter/BorrowingsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/adapter/BorrowingsAdapter.java" afterDir="false" />
-    </list>
+    <list default="true" id="df21464c-de7f-4aa4-870a-b2ca2ce5b769" name="Changes" comment="updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +22,7 @@
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="abiel" />
+        <entry key="$PROJECT_DIR$" value="Miki" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +31,20 @@
     <setting file="file://$PROJECT_DIR$/BooksCommandService/src/main/java/com/project/BooksCommandService/BooksCommandServiceApplication.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
-    <option name="isToolWindowVisible" value="false" />
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,25 +69,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/abioka/Downloads/Library-System/BorrowingsService/src/main/java/com/project/BorrowingsService/integration",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "5d597778d37d12fbeaf0b3e5a569c933"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/integration" />
-      <recent name="$PROJECT_DIR$/BorrowingsService/src/main/java/com/project/BorrowingsService/service/Dto" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.project.BorrowingsService.service.adapter" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -181,13 +158,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="CustomerService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.CustomerService.CustomerServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Write tests for package Controller (2)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
       <module name="BorrowingsService" />
       <settings run-config-name="Write tests for package Controller (2)" include-system-env-vars="true">
@@ -217,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookCommandControllerTest.testUpdateBook" />
         <item itemvalue="JUnit.BookCommandControllerTest.testDeleteBook" />
+        <item itemvalue="JUnit.BookCommandControllerTest.testUpdateBook" />
         <item itemvalue="JUnit.BookCommandControllerTest.testAddBook" />
         <item itemvalue="Diffblue Cover.Write tests for package " />
-        <item itemvalue="JUnit.BookCommandControllerTest.testDeleteBook" />
+        <item itemvalue="Diffblue Cover.Write tests for package " />
       </list>
     </recent_temporary>
   </component>
@@ -246,24 +216,16 @@
       <workItem from="1674525518427" duration="665000" />
       <workItem from="1674527154832" duration="748000" />
       <workItem from="1674583956565" duration="1045000" />
-      <workItem from="1674593792373" duration="1065000" />
-      <workItem from="1674700755425" duration="3897000" />
+      <workItem from="1674593792373" duration="2022000" />
     </task>
-    <task id="LOCAL-00001" summary="update">
-      <created>1674700952979</created>
+    <task id="LOCAL-00001" summary="updated">
+      <created>1674600531168</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1674700952982</updated>
+      <updated>1674600531168</updated>
     </task>
-    <task id="LOCAL-00002" summary="update">
-      <created>1674700998032</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1674700998032</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +243,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
 </project>
