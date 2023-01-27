@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="Customer messaging">
+    <list default="true" id="b85b6542-8bd0-4978-b196-1fb1f114ed4e" name="Changes" comment="commit to fork">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/com/project/CustomerService/Domain/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomerService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" afterDir="false" />
@@ -50,7 +50,7 @@
     <option name="myId2Visible">
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -307,6 +307,7 @@
     <MESSAGE value="i created adapter,@Document...etc" />
     <MESSAGE value="modifying customer id to string" />
     <MESSAGE value="Customer messaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customer messaging" />
+    <MESSAGE value="commit to fork" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit to fork" />
   </component>
 </project>
